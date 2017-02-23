@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Command Line PHP App</title>
-  </head>
-  <body>
-    <?php
-      echo "Test";
-     ?>
-  </body>
-</html>
+<?php
+  if ($argc === 1) {
+  print "$argc argument was passed. It was: \n";
+} else {
+  print "$argc arguments were passed. In order: \n";
+}
+  for ($i = 0; $i <= $argc - 1; ++$i) {
+    print "$i: $argv[$i]\n";
+  }
+ ?>
